@@ -1,23 +1,60 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎓 Clearance Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A Laravel-based web application to streamline and automate the student clearance process at universities. This system enables students to request department-wise clearance and allows departments to manage, approve, or decline requests—all in one centralized platform.
 
-## About Laravel
+![Laravel](https://img.shields.io/badge/Laravel-10.x-red?style=flat&logo=laravel)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?style=flat&logo=mysql)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📌 Key Features
+
+- ✅ Student registration & clearance request submission  
+- 🏢 Department dashboards to approve/decline requests  
+- 🔐 Role-based access (Admin, Department, Student)  
+- 📊 Real-time status tracking  
+- 📥 Excel student data import (via Laravel-Excel)  
+- ✉️ Notification messages after actions  
+- 🔒 Secure authentication with Laravel Breeze/Auth  
+
+---
+
+## 🧱 Tech Stack
+
+- **Backend**: Laravel 10+
+- **Frontend**: Blade, Bootstrap 5, CSS (#6699FF theme)
+- **Database**: MySQL
+- **Authentication**: Laravel Breeze / Laravel UI
+- **Excel Import**: Maatwebsite Laravel-Excel
+
+---
+
+## 🚀 Installation
+
+```bash
+# Step 1: Clone the repo
+git clone https://github.com/your-username/clearance-management.git
+cd clearance-management
+
+# Step 2: Install dependencies
+composer install
+npm install
+npm run dev
+
+# Step 3: Setup environment
+cp .env.example .env
+php artisan key:generate
+
+# Step 4: Configure your .env file (DB credentials)
+
+# Step 5: Run migrations and seeders
+php artisan migrate --seed
+
+# Step 6: Serve the application
+php artisan serve
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
